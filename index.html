@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <title>Em busca da cidade perdida</title>
+</head>
+<body>
+    <main>
+        <div class="passo ativo" id="passo-0">
+            <img src="img/cenario-passo0.png" alt="">
+            <p>Você é um explorador espacial, parte da tripulação da nave "Estrela Viajante". Sua missão é explorar o misterioso planeta Cryonix, conhecido por suas paisagens geladas e cavernas de gelo. Cada decisão que você tomar afetará o resultado da sua aventura.</p>
+            <button class="btn-proximo" data-proximo="1">Começar a aventura</button>
+        </div>
+
+        <div class="passo" id="passo-1">
+            <p>Você pousa em Cryonix, e a temperatura é extremamente baixa. A paisagem é dominada por vastos campos de neve branca e brilhante, com montanhas de gelo azul se erguendo ao horizonte. O ar gélido e rarefeito é cortante, e você pode ver seu próprio hálito formando pequenas nuvens congeladas. Diante desse cenário, você precisa decidir:</p>
+            <img src="img/cenario-passo1.png" alt="">
+            <button class="btn-proximo" data-proximo="2">Explorar uma caverna de gelo visível ao norte.</button>
+            <button class="btn-proximo" data-proximo="3">Ficar na nave para analisar o ambiente</button>
+        </div>
+       
+        <div class="passo" id="passo-2">
+            <p>Você entra na caverna. Ao adentrar, é recebido por uma beleza cristalina. As paredes são revestidas por estalagmites e estalactites de gelo cintilante que refletem a pouca luz, criando um espetáculo visual hipnotizante. No entanto, você sente que há algo mais além da beleza estética aqui.</p>
+            <button class="btn-proximo" data-proximo="4">Prosseguir explorando a caverna.</button>
+            <button class="btn-proximo" data-proximo="5">Retornar à nave para mais equipamentos.</button>
+            <button class="btn-proximo" data-proximo="22">Continuar explorando sem precauções extras.</button>
+        </div>
+        <div class="passo" id="passo-3">
+            <p>Decide ficar na nave para analisar os dados coletados. As leituras no painel mostram anomalias, sugerindo a presença de formas de vida. A tensão aumenta à medida que você considera o desconhecido.</p>
+            <button class="btn-proximo" data-proximo="6">Sair e investigar as leituras.</button>
+            <button class="btn-proximo" data-proximo="7">Esperar para obter mais dados.</button>
+        </div>
+
+        <div class="passo" id="passo-4">
+            <p>Mais adentro da caverna, a temperatura parece ainda mais baixa e o ambiente mais hostil. Para sua surpresa, você encontra artefatos alienígenas incrustados no gelo.</p>
+            <button class="btn-proximo" data-proximo="8">Coletar os artefatos.</button>
+            <button class="btn-proximo" data-proximo="9">Deixar os artefatos e continuar explorando.</button>
+            <button class="btn-proximo" data-proximo="24">Mexer nos artefatos sem analisá-los completamente.</button>    
+        </div>
+
+        <div class="passo" id="passo-5">
+            <p>Equipado com mais ferramentas, você retorna à caverna. Com o equipamento adequado, sua confiança aumenta, mas a caverna ainda guarda muitos segredos.</p>
+            <button class="btn-proximo" data-proximo="10">Usar as ferramentas para explorar mais profundamente.</button>
+            <button class="btn-proximo" data-proximo="11">Montar uma base temporária na entrada da caverna.</button>
+            <button class="btn-proximo" data-proximo="21">Decidir encerrar a missão e retornar à Terra.</button>
+        </div>
+
+        <div class="passo" id="passo-6">
+            <p>Seguindo as leituras, você chega a uma clareira coberta de gelo onde criaturas pacíficas de gelo se movem lentamente. Elas parecem estar cientes de sua presença.</p>
+            <button class="btn-proximo" data-proximo="12">Tentar comunicar-se com elas.</button>
+            <button class="btn-proximo" data-proximo="12">Coletar amostras para análise.button>
+            <button class="btn-proximo" data-proximo="22">Ignorar as precauções e interagir diretamente.</button>
+        </div>
+
+        <div class="passo" id="passo-7">
+            <p>Você coleta os artefatos, mas o ambiente começa a mostrar sinais de instabilidade. O gelo treme e racha, tornando a situação perigosa.</p>
+            <button class="btn-proximo" data-proximo="14">Voltar rapidamente para a nave.</button>
+            <button class="btn-proximo" data-proximo="15">Continuar explorando apesar dos riscos.</button>
+        </div>
+
+        <div class="passo" id="passo-8">
+            <p>Ignorando os artefatos, você segue adiante e descobre um lago subterrâneo de um azul profundo e misterioso. A superfície do lago é estranhamente calma.</p>
+            <button class="btn-proximo" data-proximo="16">Investigar o lago.</button>
+            <button class="btn-proximo" data-proximo="17">Continuar explorando a caverna.</button>
+        </div>
+
+        <div class="passo" id="passo-9">
+            <p>Você monta uma base temporária. Durante a noite, um som estranho e quase melódico ecoa pelas paredes geladas. Algo está se movendo lá fora.</p>
+            <button class="btn-proximo" data-proximo="18">Investigar os sons estranhos.</button>
+            <button class="btn-proximo" data-proximo="19">Ficar na base e monitorar os arredores.</button>
+        </div>
+
+        <div class="passo" id="passo-10">
+            <p>Tentando se comunicar, você descobre que as criaturas possuem inteligência e parecem curiosas sobre você.</p>
+            <button class="btn-proximo" data-proximo="20">Tentar aprender com elas.</button>
+            <button class="btn-proximo" data-proximo="13">Trazer uma amostra para análise.</button>
+        </div>
+
+        <div class="passo" id="passo-11">
+            <p>Você coleta amostras das criaturas, mas algo começa a derreter o gelo ao seu redor, causando um perigo iminente.</p>
+            <button class="btn-proximo" data-proximo="12">Correr para a nave.</button>
+            <button class="btn-proximo" data-proximo="17">Encontrar uma maneira de parar o derretimento.</button>
+        </div>
+
+        <div class="passo" id="passo-12">
+            <p>Você retorna à nave em segurança, mas percebe que trouxe algo inesperado com você.</p>
+            <button class="btn-proximo" data-proximo="16">Isolar a nave e investigar.</button>
+            <button class="btn-proximo" data-proximo="18">Sair da nave e ver o que foi trazido.</button>
+            <button class="btn-proximo" data-proximo="21">Decidir que a missão está concluída e retornar à Terra.</button>
+        </div>
+        
+        <div class="passo" id="passo-13">
+            <p>O lago revela uma passagem secreta para outra parte da caverna, intrigando você ainda mais.</p>
+            <button class="btn-proximo" data-proximo="12">Entrar na passagem.</button>
+            <button class="btn-proximo" data-proximo="17">Voltar e buscar mais suprimentos.</button>
+        </div>
+        
+        <div class="passo" id="passo-14">
+            <p>Você encontra um grupo de criaturas desconhecidas, movendo-se em sincronia.</p>
+            <button class="btn-proximo" data-proximo="20">Observar à distância.</button>
+            <button class="btn-proximo" data-proximo="17">Tentar interagir com elas.</button>
+        </div>
+        
+        <div class="passo" id="passo-15">
+            <p>As criaturas compartilham conhecimento sobre o planeta, revelando segredos antigos.</p>
+            <button class="btn-proximo" data-proximo="12">Anotar as descobertas.</button>
+            <button class="btn-proximo" data-proximo="17">Eerguntar sobre mais locais no planeta.</button>
+        </div>
+        
+        <div class="passo" id="passo-16">
+            <p>Dentro da nave, você descobre uma forma de vida alienígena que parece estar tentando se comunicar.</p>            </p>
+            <button class="btn-proximo" data-proximo="12">Tentar se comunicar</button>
+            <button class="btn-proximo" data-proximo="17">Encontrar uma maneira de parar o derretimento.</button>
+        </div>
+        
+        <div class="passo" id="passo-17">
+            <p>Você coleta amostras das criaturas, mas algo começa a derreter o gelo ao seu redor, causando um perigo iminente.</p>
+            <button class="btn-proximo" data-proximo="12">Correr para a nave.</button>
+            <button class="btn-proximo" data-proximo="17">Encontrar uma maneira de parar o derretimento.</button>
+        </div>
+
+        <div class="passo" id="passo-18">
+            <p>Você coleta amostras das criaturas, mas algo começa a derreter o gelo ao seu redor, causando um perigo iminente.</p>
+            <button class="btn-proximo" data-proximo="12">Correr para a nave.</button>
+            <button class="btn-proximo" data-proximo="17">Encontrar uma maneira de parar o derretimento.</button>
+        </div>
+        
+        <div class="passo" id="passo-19">
+            <p>Você coleta amostras das criaturas, mas algo começa a derreter o gelo ao seu redor, causando um perigo iminente.</p>
+            <button class="btn-proximo" data-proximo="12">Correr para a nave.</button>
+            <button class="btn-proximo" data-proximo="17">Encontrar uma maneira de parar o derretimento.</button>
+        </div>
+        
+        <div class="passo" id="passo-20">
+            <p>Você coleta amostras das criaturas, mas algo começa a derreter o gelo ao seu redor, causando um perigo iminente.</p>
+            <button class="btn-proximo" data-proximo="12">Correr para a nave.</button>
+            <button class="btn-proximo" data-proximo="17">Encontrar uma maneira de parar o derretimento.</button>
+        </div>
+        
+        <div class="passo" id="passo-21">
+            <p>Você coletou amostras inestimáveis, desvendou mistérios antigos e fez descobertas que mudarão o curso da exploração espacial para sempre. Com a nave "Estrela Viajante" carregada de tesouros e conhecimento, você decide que é hora de retornar à Terra.
+
+                Enquanto você decola de Cryonix, a equipe celebra suas conquistas. As criaturas que você encontrou acenam do solo gelado, e os cristais de gelo cintilam em despedida. Você sente um misto de orgulho e nostalgia ao deixar para trás esse planeta misterioso.
+                
+                Após uma viagem tranquila de volta, você e sua equipe são recebidos como heróis. Os dados e artefatos que trouxeram serão estudados por anos, impulsionando novas tecnologias e expandindo nosso entendimento do universo.
+                
+                Parabéns! Você completou a jornada em Cryonix com sucesso, desvendando seus segredos e garantindo um lugar de destaque na história da exploração espacial.
+                
+                Obrigado por jogar! 🚀❄️✨</p>
+                <button class="btn-proximo" data-proximo="0">Recomeçar a aventura.</button>
+        </div>
+
+        <div class="passo" id="passo-22">
+            <p>Enquanto explorava uma parte instável da caverna, uma avalanche de gelo repentino te pega desprevenido. Infelizmente, a estrutura do gelo cede, soterrando você e sua equipe. Seus esforços heroicos para coletar artefatos alienígenas e desvendar os segredos de Cryonix ficarão perdidos para sempre sob o gelo eterno.
+
+                Fim da Aventura. Você morreu.
+            <button class="btn-proximo" data-proximo="0">Recomeçar a aventura.</button>
+        
+        </div>
+        
+        <div class="passo" id="passo-23">
+            <p>Apesar de seus esforços para explorar Cryonix, você não conseguiu coletar nenhum artefato significativo ou fazer descobertas substanciais. Retornando à Terra de mãos vazias, a missão é considerada um fracasso. As esperanças de avançar na exploração espacial são temporariamente frustradas.
+
+                Fim da Aventura. Você voltou sem nada.</p>
+            <button class="btn-proximo" data-proximo="0">Recomeçar a aventura.</button>
+        </div>
+        
+        <div class="passo" id="passo-24">
+            <p>Durante a expedição, um desmoronamento de gelo bloqueia a única saída da caverna onde você e sua equipe estavam explorando. Os recursos começam a se esgotar e, apesar de todos os esforços, a comunicação com a nave é cortada. Infelizmente, você e sua equipe ficam presos no planeta Cryonix, um testemunho dos perigos e mistérios do universo.
+
+             Fim da Aventura. Você ficou preso no planeta.</p>
+            <button class="btn-proximo" data-proximo="0">Recomeçar a aventura.</button>
+            
+        </div>
+        
+</main>
+    <script src="script.js"></script>     
+</body>
+</html>
